@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            font-weight: bold;
+            background-color: rgb(222, 127, 127);
+            color: white;
+        }
+        a:hover::before{
+            content: "=> ";
+        }
+        a:hover::after{
+            content: " <=";
+        }
+        a.link:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo com links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank" class="link">Acesse o Youtube</a></li>
+        <li><a href="https://www.google.com" target="_blank">Acesse o Google</a></li>
+    </ul>
+</body>
+</html>

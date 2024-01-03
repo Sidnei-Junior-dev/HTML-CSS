@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+        <h2>Links Externos</h2>
+        <p>
+        usando a tag -a href="url do link"- conseguimos direcionar você para outro site
+        Porém é recomendado usar com os parâmetros -target="_blank"- e -rel="external"- para abrir o site em questão em outra aba de navegação.
+        </p>
+        <p>
+        Por exemplo com este link <a href="https://www.youtube.com/">aqui sem os parâmetros.</a>
+        e este link <a href="https://www.youtube.com/" target="_blank" rel="external">com os parâmetros.</a>
+        </p>
+
+    <h2>Links Internos</h2>
+        <p>Podemos acessar os links internos também, isso sem digitar a url do site.</p>
+        <p>para isso bastar linkar com a tag -a href="link em questão"- + -rel="next" para indicar q a próxima página.-</p>
+        <h3>Como este <a href="pag2.html" rel="next">aqui</a></h3>
+        <h3>Página 3 <a href="surpresa/pag3.html" rel="next">aqui.</a></h3>
+    <h2>Links para Downloads</h2>
+        <p>Para colocar um link para download devemos ter o arquivo em questão e linka-lo com -a href=""-</p>
+        <h3>Por exemplo este <a href="livros/meulivro.pdf" type="application/pdf">link em Pdf.</a></h3>
+        <h3>E este <a href="livros/meulivro.zip" type="application.zip" download="meulivro.zip">link em Zip.</a></h3>
+        <p>Certos arquivos não são instalados e seram abertos no próprio navegador, portanto não necessita do parametro -download="arquivo em quetão"-.</p>
+        <p>também temos que declarar o tipo do arquivo que estamos fazendo download portanto -type="application/tipo do arquivo"- para achar o tipo do arquivo basta acessar o site:http://iana.org/assigments/media-type</p>
+
+</body>
+</html>
